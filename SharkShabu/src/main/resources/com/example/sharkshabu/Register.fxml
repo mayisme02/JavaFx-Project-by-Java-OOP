@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="LayoutPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="514.0" style="-fx-background-color: #d1d1d1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sharkshabu.RegisterController">
+   <top>
+      <VBox fx:id="V1" prefHeight="123.0" prefWidth="514.0" style="-fx-background-color: #ececec;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Logoregister" fitHeight="129.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="190.0" top="20.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="https://lh3.googleusercontent.com/pw/AMWts8B0r5RApUxDfvRcHWD08R0ZuX5w26NL4N3wSNUfKPc6LoCcUG574RtnpGNtnlIbHyJqOuIdkAhQgIJkxIvy0tx8bUZ0Xsm__RxC83W7RcVMxmu2ChPzws8F6cNMRpeAlGHiCEVqZ4gQJMqjaM-4ilnDvA=w726-h726-s-no?authuser=0" />
+               </image>
+            </ImageView>
+            <Label fx:id="RegisterTitle" text="SHARK SHABU">
+               <font>
+                  <Font name="BM JUA OTF" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="140.0" right="50.0" top="-5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox fx:id="V2" prefHeight="361.0" prefWidth="455.0" style="-fx-background-color: #ececec;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="V3" prefHeight="24.0" prefWidth="455.0">
+               <children>
+                  <HBox fx:id="H1" prefHeight="100.0" prefWidth="200.0" />
+                  <Label fx:id="Username" text="ชื่อผู้ใช้">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox fx:id="V4" prefHeight="32.0" prefWidth="455.0">
+                     <children>
+                        <TextField fx:id="UserText" promptText="กรอกชื่อโปรไฟล์" style="-fx-background-color: #fff;">
+                           <VBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox fx:id="V5" prefHeight="26.0" prefWidth="455.0">
+               <children>
+                  <Label fx:id="TextComment" prefWidth="163.0" text="สิ่งนี้จะปรากฏในโปรไฟล์ของคุณ">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="YourEmailTitle" text="อีเมลของคุณ">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="V6" prefHeight="34.0" prefWidth="455.0">
+               <children>
+                  <TextField fx:id="YourEmailField" prefHeight="26.0" prefWidth="434.0" promptText="กรอกอีเมลของคุณ" style="-fx-background-color: #fff;">
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox fx:id="V7" prefHeight="22.0" prefWidth="455.0">
+               <children>
+                  <Label fx:id="CreatePassword" text="สร้างรหัสผ่าน">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+               </children></VBox>
+            <VBox fx:id="V8" prefHeight="30.0" prefWidth="455.0">
+               <children>
+                  <TextField fx:id="PasswordText" prefHeight="26.0" prefWidth="478.0" promptText="สร้างรหัสผ่าน" style="-fx-background-color: #fff;">
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children></VBox>
+            <VBox fx:id="V9" prefHeight="23.0" prefWidth="455.0">
+               <children>
+                  <VBox fx:id="V12" prefHeight="25.0" prefWidth="455.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="60.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="YourBirthDay" text="วันเกิดของคุณ">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" right="70.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox fx:id="V13" prefHeight="24.0" prefWidth="455.0">
+               <children>
+                  <HBox fx:id="H3" prefHeight="33.0" prefWidth="455.0">
+                     <children>
+                        <ComboBox fx:id="DayComBo" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #fafafa;">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="MonthComBo" prefHeight="26.0" prefWidth="153.0" style="-fx-background-color: #fafafa;">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="H2" prefHeight="4.0" prefWidth="302.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="V16" prefHeight="30.0" prefWidth="455.0">
+               <children>
+                  <HBox fx:id="H4" prefHeight="18.0" prefWidth="514.0">
+                     <children>
+                        <Label fx:id="DayText" text="วันเกิด">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MonthText" text="เดือน">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="190.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="V17" prefHeight="35.0" prefWidth="455.0">
+               <children>
+                  <VBox fx:id="V14" prefHeight="12.0" prefWidth="455.0">
+                     <children>
+                        <TextField fx:id="yearFeild" promptText="พ.ศ." style="-fx-background-color: #ffff;">
+                           <VBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="V10" prefHeight="0.0" prefWidth="514.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="V18" prefHeight="127.0" prefWidth="455.0">
+               <children>
+                  <VBox fx:id="V19" prefHeight="221.0" prefWidth="514.0">
+                     <children>
+                        <Label fx:id="YearsText" text=" ปี (เช่น 2566)">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="70.0" top="-7.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="CommentText2" prefHeight="22.0" prefWidth="465.0" text="เมื่อคลิกลงทะเบียนหมายความว่าคุณยอมรับข้อกำหนดและเงื่อนไขของร้าน Shark Shabu">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="80.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="-10.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="RegistButton" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="245.0" style="-fx-background-color: #b52e2e;" text="ลงทะเบียน" textFill="#fffafa">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="130.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="HaveAccount" text="มีบัญชีแล้วใช่มั้ย?">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="215.0" right="60.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="LoginButton" mnemonicParsing="false" onAction="#RegisterToLogin" prefHeight="37.0" prefWidth="244.0" style="-fx-background-color: #b52e2e;" text="เข้าสู่ระบบ" textFill="WHITE">
+                           <font>
+                              <Font name="Adelle Sans Devanagari Regular" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="130.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

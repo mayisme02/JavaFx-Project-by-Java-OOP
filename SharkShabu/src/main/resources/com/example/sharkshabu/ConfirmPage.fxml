@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sharkshabu.ConfirmController">
+   <center>
+      <VBox prefHeight="245.0" prefWidth="347.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="139.0" prefWidth="349.0">
+               <children>
+                  <ImageView fx:id="ImageConfirm" fitHeight="130.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="110.0" top="10.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8B0r5RApUxDfvRcHWD08R0ZuX5w26NL4N3wSNUfKPc6LoCcUG574RtnpGNtnlIbHyJqOuIdkAhQgIJkxIvy0tx8bUZ0Xsm__RxC83W7RcVMxmu2ChPzws8F6cNMRpeAlGHiCEVqZ4gQJMqjaM-4ilnDvA=w1280-h1280-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox prefHeight="44.0" prefWidth="347.0">
+               <children>
+                  <Label fx:id="confirmText" prefWidth="270.0" text="คุณต้องการออกจากระบบ?">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="75.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="-5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox prefHeight="34.0" prefWidth="347.0">
+               <children>
+                  <Button fx:id="YesButton" mnemonicParsing="false" onAction="#LogoutToConfirmPage" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: #b52e2e;" text="Yes" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="50.0" top="-5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Unicode MS" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CancleButton" mnemonicParsing="false" onAction="#LogoutToConfirmPage" prefHeight="33.0" prefWidth="110.0" style="-fx-background-color: #b52e2e;" text="Cancel" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" top="-5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

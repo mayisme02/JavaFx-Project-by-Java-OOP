@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sharkshabu.DrinkController">
+   <top>
+      <HBox prefHeight="58.0" prefWidth="672.0" style="-fx-background-color: #b52e2e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="drink2" text="เครื่องดื่ม" textFill="WHITE">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="save6" mnemonicParsing="false" onAction="#saveDataDrink" prefHeight="56.0" prefWidth="82.0" style="-fx-background-color: #b52e2e;" text="บันทึก" textFill="WHITE">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="160.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="DrinkBackMarket" mnemonicParsing="false" onAction="#DrinkBackMarket" prefHeight="56.0" prefWidth="81.0" style="-fx-background-color: #b52e2e;" text="Back" textFill="#fffdfd">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Unicode MS" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="555.0" prefWidth="447.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="431.0" fitWidth="408.0" layoutX="10.0" layoutY="7.0">
+               <image>
+                  <Image url="https://lh3.googleusercontent.com/pw/AMWts8CFeei000EoMlS2xe5jyt8rWbiklez51HeVBGY-3bU1J6HyIlR8IrhJtqjwpE2D2J8bO-9JoUot6H-4EgnpkS4-7qZO4RPmirKmCX50Gi5UFYRfPprmd8FIY8mCdyogLjqrGT6Z78psjc8zO1GvjGJKvQ=w874-h901-s-no?authuser=0" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="e1" layoutX="58.0" layoutY="184.0" mnemonicParsing="false" text="น้ำโค้ก">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="e2" layoutX="189.0" layoutY="184.0" mnemonicParsing="false" text="น้ำมะนาว">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="e3" layoutX="313.0" layoutY="184.0" mnemonicParsing="false" text="น้ำแดงมะนาว">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="e4" layoutX="45.0" layoutY="436.0" mnemonicParsing="false" text="น้ำมะพร้าว">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="e5" layoutX="187.0" layoutY="436.0" mnemonicParsing="false" text="น้ำแตงโม">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="e6" layoutX="325.0" layoutY="436.0" mnemonicParsing="false" text="น้ำส้ม">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+               </font>
+            </CheckBox>
+            <ComboBox fx:id="h1" layoutX="53.0" layoutY="215.0" prefHeight="24.0" prefWidth="99.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+            <ComboBox fx:id="h2" layoutX="180.0" layoutY="215.0" prefHeight="25.0" prefWidth="99.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+            <ComboBox fx:id="h3" layoutX="307.0" layoutY="215.0" prefHeight="25.0" prefWidth="99.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+            <ComboBox fx:id="h4" layoutX="41.0" layoutY="471.0" prefHeight="24.0" prefWidth="99.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+            <ComboBox fx:id="h5" layoutX="181.0" layoutY="471.0" prefHeight="24.0" prefWidth="99.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+            <ComboBox fx:id="h6" layoutX="322.0" layoutY="471.0" prefHeight="24.0" prefWidth="99.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="LayOutMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="487.0" style="-fx-background-color: #f1f1f1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sharkshabu.LoginController">
+   <top>
+      <VBox fx:id="V11" prefHeight="227.0" prefWidth="487.0" style="-fx-background-color: #f1f1f1;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="BoxnewsLogo" fitHeight="198.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://lh3.googleusercontent.com/pw/AMWts8B0r5RApUxDfvRcHWD08R0ZuX5w26NL4N3wSNUfKPc6LoCcUG574RtnpGNtnlIbHyJqOuIdkAhQgIJkxIvy0tx8bUZ0Xsm__RxC83W7RcVMxmu2ChPzws8F6cNMRpeAlGHiCEVqZ4gQJMqjaM-4ilnDvA=w726-h726-s-no?authuser=0" />
+               </image>
+               <VBox.margin>
+                  <Insets left="150.0" top="40.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox fx:id="V99" prefHeight="411.0" prefWidth="487.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="V77" prefHeight="57.0" prefWidth="492.0">
+               <children>
+                  <Label fx:id="BoxNewsTitle" text="SHARK SHABU" textFill="#433939">
+                     <font>
+                        <Font name="BM JUA OTF" size="40.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="120.0" top="-5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="V44" prefHeight="29.0" prefWidth="487.0">
+               <children>
+                  <Label fx:id="Title2" text="ยินดีต้อนรับ">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="220.0" top="-10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox fx:id="H88" prefHeight="34.0" prefWidth="487.0">
+               <children>
+                  <ImageView fx:id="UserLogo" fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="55.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="EmailTextF" prefHeight="34.0" prefWidth="346.0" promptText="Username" style="-fx-background-color: #ffffff;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="H00" prefHeight="33.0" prefWidth="487.0">
+               <children>
+                  <ImageView fx:id="PasswordLogo" fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="55.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="PasswordFill" prefHeight="34.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: #ffffff;">
+                     <HBox.margin>
+                        <Insets left="14.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox fx:id="Vv1" prefHeight="38.0" prefWidth="487.0">
+               <children>
+                  <Button fx:id="Login1Button" mnemonicParsing="false" onAction="#submit2" prefHeight="33.0" prefWidth="175.0" style="-fx-background-color: #b52e2e;" text="Login" textFill="#fff7f7">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="160.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="VBox1" prefHeight="27.0" prefWidth="487.0">
+               <children>
+                  <Label fx:id="ortext" text="or">
+                     <font>
+                        <Font name="Apple Symbols" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="230.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox fx:id="VB7" prefHeight="77.0" prefWidth="492.0">
+               <children>
+                  <Button fx:id="SignUpButton" mnemonicParsing="false" onAction="#SignupToRegister" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: #b52e2e;" text="Sign up" textFill="#fff7f7">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="160.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="NewCustomer" text="ลงทะเบียนสำหรับลูกค้าใหม่!">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="175.0" top="10.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="66.0" prefWidth="492.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="-5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

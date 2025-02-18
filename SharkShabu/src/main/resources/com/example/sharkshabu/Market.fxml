@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sharkshabu.MarketController">
+   <top>
+      <HBox prefHeight="75.0" prefWidth="600.0" style="-fx-background-color: #b52e2e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="ShabuTitle" prefHeight="34.0" prefWidth="230.0" text="SHARK SHABU" textFill="#fffefe">
+               <font>
+                  <Font name="BM JUA OTF" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="LogoutMarket" mnemonicParsing="false" onAction="#LogoutToConfirm" prefHeight="74.0" prefWidth="91.0" style="-fx-background-color: #b52e2e;" text="LOGOUT" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="614.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="31.0" prefWidth="600.0" />
+            <GridPane prefHeight="725.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="SoupImage" fitHeight="168.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-shabu-shabu-gourmet-free-buckle-element-image_1189333.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="SoupButton" mnemonicParsing="false" onAction="#MarketToSoup" prefHeight="66.0" prefWidth="203.0" style="-fx-background-color: #fff;" text="น้ำซุป">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="167.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets top="-70.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://images.foodstory.co/restaurant/d2d89f5d-fdfc-4ed3-b308-b50f22816ec4/8df4bedb-5639-4b4a-be16-8c758c85d31d/menu/20200514110440797000S" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#MarketToVegetable" prefHeight="73.0" prefWidth="200.0" style="-fx-background-color: #fff;" text="ผัก" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="noodImage" fitHeight="168.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://png.pngtree.com/png-clipart/20200701/big/pngtree-fine-vermicelli-hot-pot-powder-png-image_5427450.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="noodButton" mnemonicParsing="false" onAction="#MarketToWoonzen" prefHeight="71.0" prefWidth="200.0" style="-fx-background-color: #fff;" text="เส้น" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="NamjimImage" fitHeight="114.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="10.0" top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8AX_IfuYyx0PZyakWi8XSLMAdJxslJRLBKhjlFg1-eM2MlGycljehBC5_uds1KjNL98gtq7TJwAII2w4WyCRYUwalga8P8tmH-7Zg8kHZ4mnxd3zbErFj7SEIzzQ31Ue5LBfKHQQJe0gne7nGkxFKH7OA=w235-h201-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="NamjimButton" mnemonicParsing="false" onAction="#MarketToSauce" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #fff;" text="น้ำจิ้ม" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="meetImage" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://cmwfoodssupport.com/wp-content/uploads/2022/05/หมูสันคอ-สไลด์-1.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="meetButton" mnemonicParsing="false" onAction="#MarketToPock" prefHeight="68.0" prefWidth="210.0" style="-fx-background-color: #fff;" text="เนื้อ" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="DrinkImage" fitHeight="168.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8DObjnq8PIG1jOAalaywcHiDwbXU6NdgS7FTzg6pfQiWQXFC0qAREr7kEPdJQudZYOpkXMGnmJ0-_rwUR7iwH5h3O4sBGCTdeWWLthQ1zi7aVthm9LqwjxImddfHFR7i3VHM6kJ57FcRz1tufBLqlMo2A=w854-h888-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="DrinkButton" mnemonicParsing="false" onAction="#MarketToDrink" prefHeight="79.0" prefWidth="208.0" style="-fx-background-color: #fff;" text="เครื่องดื่ม" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="kanomImage" fitHeight="167.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://img.lovepik.com/free-png/20211130/lovepik-fruit-drink-cup-png-image_401209008_wh1200.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="KanomButton" mnemonicParsing="false" onAction="#MarketToKanom" prefHeight="77.0" prefWidth="212.0" style="-fx-background-color: #fff;" text="ของทานเล่น" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="21.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="FruitImage" fitHeight="167.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8DzjqTacrN5WtVUVPWPyCccppeajd5VrK3PSRF0kaWM7DYzhupT6oJDwMKFszX8dtcrf-YxfBBA9w1BXSl8m8uznI5_UdpbRFpjF_RmQp4BoXoYZZ_zuXmow4_X5oQqplz2h4ab6p5yqNu8pgyQ_D6j-g=w589-h403-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="FruitButton" mnemonicParsing="false" onAction="#MarketToFruits" prefHeight="85.0" prefWidth="208.0" style="-fx-background-color: #fff;" text="ผลไม้" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="BillImage" fitHeight="162.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-60.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8BStzAXPp5Dkv4__lWFO-mEqet2JUnhkZ8qFiHkbNr7uSxgpeNWbAIbzNMhIJwtOAJRNdbYUg3N6PTdBuAAJf8GsKt3GUH9FOXhCS2w53cUScfd0HZf1pBHN1zs6xvsHg8qdw-a_chUWoShcFXkO7bjAg=w888-h888-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="BillButton" mnemonicParsing="false" onAction="#MarketToBill" prefHeight="77.0" prefWidth="211.0" style="-fx-background-color: #fff;" text="เช็คบิล" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

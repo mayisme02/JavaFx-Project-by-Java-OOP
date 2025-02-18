@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sharkshabu.KanomController">
+   <top>
+      <HBox prefHeight="72.0" prefWidth="744.0" style="-fx-background-color: #b52e2e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="KanomTitle" text="ของทานเล่น" textFill="WHITE">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="26.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="save7" mnemonicParsing="false" onAction="#saveDataKanom" prefHeight="70.0" prefWidth="87.0" style="-fx-background-color: #b52e2e;" text="บันทึก" textFill="WHITE">
+               <font>
+                  <Font name="Adelle Sans Devanagari Regular" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="400.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="KanomBackMarket" mnemonicParsing="false" onAction="#KanomBackMarket" prefHeight="78.0" prefWidth="88.0" style="-fx-background-color: #b52e2e;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Arial Unicode MS" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="380.0" layoutX="27.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8AxOaX3wHKifGO4tjO_rM9DXP3JzJ384as8hxyMgqyz9npM2k6-KzB27CY4K-0yaWCerp-HSDhAYcw2NjM8AfdwIqVqiF3e_sdhlNtcmXl60MhRNs_3t4PPC_oHdenSRZGjvmad68-C7DFFEjL2fR45Cg=w874-h1240-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="k1" layoutX="47.0" layoutY="136.0" mnemonicParsing="false" text="ข้าวเหนียวมะม่วง">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k2" layoutX="236.0" layoutY="136.0" mnemonicParsing="false" text="ช็อคโกแลต">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k5" layoutX="46.0" layoutY="309.0" mnemonicParsing="false" text="ชาเขียวถั่วแดง">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k6" layoutX="231.0" layoutY="309.0" mnemonicParsing="false" text="สตรอว์เบอร์รี่">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k9" layoutX="56.0" layoutY="484.0" mnemonicParsing="false" text="เสาวรสเยลลี่">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k10" layoutX="227.0" layoutY="483.0" mnemonicParsing="false" text="น้ำแข็งไส">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <ComboBox fx:id="w1" layoutX="47.0" layoutY="168.0" prefHeight="26.0" prefWidth="122.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w2" layoutX="221.0" layoutY="168.0" prefHeight="26.0" prefWidth="124.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w5" layoutX="47.0" layoutY="341.0" prefHeight="26.0" prefWidth="118.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w6" layoutX="224.0" layoutY="341.0" prefHeight="26.0" prefWidth="112.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w9" layoutX="56.0" layoutY="514.0" prefHeight="26.0" prefWidth="112.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w10" layoutX="222.0" layoutY="513.0" prefHeight="26.0" prefWidth="112.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="343.0" layoutX="13.0" layoutY="12.0">
+                     <image>
+                        <Image url="https://lh3.googleusercontent.com/pw/AMWts8D8ANALcFbWl-QDvrfiE_XYrAICjD3zJFNvnkOVM52oCZl2h4_VqAFAL25j4_cUbZRu1htljsMkvJkwelV0dUZVoesWGQ9jaJPPiMhhqs4BuUymUyiN9HnJi0n_NbyYxohsjZooUx3LPqC0TmNwx020Rw=w874-h1240-s-no?authuser=0" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="k3" layoutX="59.0" layoutY="122.0" mnemonicParsing="false" text="บัวลอย">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k7" layoutX="44.0" layoutY="279.0" mnemonicParsing="false" text="เฟรนด์ฟราย">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k11" layoutX="52.0" layoutY="450.0" mnemonicParsing="false" text="ไก่ทอด">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k12" layoutX="229.0" layoutY="450.0" mnemonicParsing="false" text="ยำทะเล">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k8" layoutX="226.0" layoutY="286.0" mnemonicParsing="false" text="สลัดผัก">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k4" layoutX="222.0" layoutY="121.0" mnemonicParsing="false" text="นักเก็ตไก่">
+                     <font>
+                        <Font name="Adelle Sans Devanagari Regular" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <ComboBox fx:id="w3" layoutX="55.0" layoutY="154.0" prefHeight="26.0" prefWidth="103.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w4" layoutX="224.0" layoutY="153.0" prefHeight="26.0" prefWidth="105.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w7" layoutX="42.0" layoutY="311.0" prefHeight="26.0" prefWidth="104.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w8" layoutX="223.0" layoutY="323.0" prefHeight="26.0" prefWidth="104.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w11" layoutX="48.0" layoutY="485.0" prefHeight="26.0" prefWidth="104.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+                  <ComboBox fx:id="w12" layoutX="226.0" layoutY="485.0" prefHeight="26.0" prefWidth="104.0" promptText="จำนวน" style="-fx-background-color: #dedede;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
